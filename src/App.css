@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -19,13 +19,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+form input[type="text"],
+form select,
+form textarea{
+  display: block;
+  margin: 15px;
+  padding: 5px;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+form select{
+  min-width: 214px;
+  max-width: 200;
+}
+
+form input[type="submit"],
+form button{
+  display: block;
+  float:inline-start;
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: wheat;
+  transition: all 500ms;
+}
+
+form input[type="submit"]:hover,
+form button{
+  border: 3px solid gray;
+
+  background-color: #ccc;
+  color: #444;
+}
+
+.container{
+  border: 3px solid white;
+  background-color: black;
+  text-align: left;
+  color: white;
+}
+
+.card{
+  border: 3px solid white;
+  background-color: black;
+  text-align: left;
+  color: white;
 }
 
 @keyframes App-logo-spin {
